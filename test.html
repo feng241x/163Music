@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程</title>
+</head>
+<body>
+
+<audio id="myAudio" controls>
+    <source src="mp3/bjdm.mp3" type="audio/ogg">
+    您的浏览器不支持 audio 元素。
+</audio>
+<p>点击获取音频第一部分的缓冲区间。</p>
+<p id="demo"></p>
+<button onclick="myFunction()">点我</button>
+<script>
+    function myFunction(){
+        var x = document.getElementById("myAudio");
+        document.getElementById("demo").innerHTML = "开始： " + x.buffered.start(0) + " 结束： " + x.buffered.end(0);
+    }
+</script>
+
+</body>
+</html>

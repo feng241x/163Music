@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿网易云音乐底部音乐插件</title>
+    <link rel="stylesheet" href="css/music163.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jQuery.music163.js"></script>
+</head>
+<body>
+<div class="g-btmbar">
+    <div class="m-playbar m-playbar-unlock" style="top: -7px; visibility: visible;" id="auto-id-SaC78nLIwnhNsThK">
+        <div class="updn">
+            <div class="left f-fl"><a href="javascript:;" class="btn" hidefocus="true" data-action="lock"></a></div>
+            <div class="right f-fl"></div>
+        </div>
+        <div class="bg"></div>
+        <div class="hand" title="展开播放条"></div>
+        <div class="wrap" id="g_player" style="margin-left: -490px;">
+            <div class="btns">
+                <a href="javascript:;" hidefocus="true" data-action="prev" class="prv" title="上一首(ctrl+←)">上一首</a>
+                <a href="javascript:;" hidefocus="true" data-action="pause" class="ply j-flag" title="播放/暂停(p)">播放/暂停</a>
+                <a href="javascript:;" hidefocus="true" data-action="next" class="nxt" title="下一首(ctrl+→)">下一首</a>
+            </div>
+            <div class="head j-flag">
+                <img src="#"><a href="#" hidefocus="true" class="mask"></a>
+            </div>
+            <div class="play">
+                <div class="j-flag words">
+                    <a hidefocus="true" href="#" class="f-thide name fc1 f-fl" title="Lifeline">Lifeline</a>
+                    <span class="by f-thide f-fl">
+                        <span title="You Are Free">
+                            <a class="" href="#" hidefocus="true">You&nbsp;Are&nbsp;Free</a>
+                        </span>
+                    </span>
+                    <a href="#" class="src" title="来自歌单"></a>
+                </div>
+                <div class="m-pbar" data-action="noop">
+                    <div class="barbg j-flag" id="auto-id-uC0qO1dVvechvZdl">
+                        <div class="rdy" style="width: 0%;"></div>
+                        <div class="cur" style="width: 0%;overflow: visible">
+                            <span class="btn f-tdn f-alpha" id="auto-id-BLvQzO0DvcQAGZV4"><i></i></span>
+                        </div>
+                    </div>
+                    <span class="j-flag time"><em>05:13</em> / 05:13</span>
+                </div>
+            </div>
+            <div class="oper f-fl">
+                <a href="javascript:;" hidefocus="true" data-action="like" class="icn icn-add j-flag" title="收藏">收藏</a>
+                <a href="javascript:;" hidefocus="true" data-action="share" class="icn icn-share" title="分享">分享</a>
+            </div>
+            <div class="ctrl f-fl f-pr j-flag">
+                <div class="m-vol" style="visibility:hidden;" id="auto-id-GionHEwpTydyp5uw">
+                    <div class="barbg"></div>
+                    <div class="vbg j-t" id="auto-id-uicrQQXnHslMiSGa">
+                        <div class="curr j-t" style="height: 74.4px;"></div>
+                        <span class="btn f-alpha j-t" style="top: 16.2px;"></span></div>
+                </div>
+                <a href="javascript:;" hidefocus="true" data-action="volume" class="icn icn-vol"></a>
+                <a href="javascript:;" hidefocus="true" data-action="mode" class="icn icn-loop" title="循环"></a>
+                <span class="add f-pr">
+                    <span class="tip" style="display: none;">已开始播放</span>
+                    <a href="javascript:;" title="播放列表" hidefocus="true" data-action="panel" class="icn icn-list s-fc3">72</a>
+                </span>
+                <div class="tip tip-1" style="display:none;">循环</div>
+            </div>
+        </div>
+        <div class="list music_none" id="g_playlist">
+            <div class="listhd">
+                <div class="listhdc">
+                    <h4>播放列表(<span class="j-flag">3</span>)</h4>
+                    <a href="javascript:;" class="addall" data-action="likeall">
+                        <span class="ico ico-add"></span>收藏全部</a>
+                    <span class="line"></span>
+                    <a href="javascript:;" class="clear" data-action="clear"><span class="ico icn-del"></span>清除</a>
+                    <p class="lytit f-ff0 f-thide j-flag">把酒倒满</p>
+                    <span class="close" data-action="close">关闭</span>
+                </div>
+            </div>
+            <div class="listbd">
+                <img class="imgbg j-flag" id="auto-id-fC8vGN1TVKyPu2D7" src="http://music.163.com/api/img/blur/18547661650609050" style="top: -360px;">
+                <div class="msk"></div>
+                <div class="listbdc j-flag" id="auto-id-ATQV0JFBsTRT4w1R">
+                    <ul class="f-cb"></ul>
+                </div>
+                <div class="bline j-flag" id="auto-id-wPTnXTLCJiITWEUH">
+                    <span class="scrol" hidefocus="true" style="height: 260px; display: none; top: 0px;"></span>
+                </div>
+                <div class="ask j-flag" id="auto-id-M4hZzMBe2qBnZWoy">
+                    <a class="ico ico-ask"></a>
+                </div>
+                <div class="upload j-flag" style="display: none;">
+                    <a data-action="close" href="/lyric/report?id=447926534">报错</a></div>
+                <div class="msk2"></div>
+                <div class="listlyric j-flag" id="auto-id-y0VJ8pK06gcUE2vv">
+                    <p class="j-flag z-sel" data-time="0">作曲 : 韩东</p>
+                    <p class="j-flag" data-time="1">作词 : 韩东</p>
+                    <p class="j-flag" data-time="32.53">如果爱是一杯穿肠的毒药 我喝过</p>
+                    <p class="j-flag" data-time="39.68">如果情是一汪人世间的浑水 我趟过</p>
+                    <p class="j-flag" data-time="47.28">如果我的命运注定坎坷</p>
+                    <p class="j-flag" data-time="50.72">我不会问为什么</p>
+                    <p class="j-flag" data-time="54.52">如果自暴自弃怨天由命 那不是我</p>
+                    <p class="j-flag" data-time="62">如果你有一双飞翔的翅膀 还等什么</p>
+                    <p class="j-flag" data-time="69.23">如果你的泪水已经汇聚成河 你在酿酒吗</p>
+                    <p class="j-flag" data-time="76.55">如果历尽磨难受尽挫折</p>
+                    <p class="j-flag" data-time="80.2">老天还依然不放过我</p>
+                    <p class="j-flag" data-time="84.14">那么就让狂风暴雨来的 更猛烈些吧</p>
+                    <p class="j-flag" data-time="91.53999999999999">如果历尽磨难受尽挫折</p>
+                    <p class="j-flag" data-time="95.06">老天还依然不放过我</p>
+                    <p class="j-flag" data-time="98.95">那么就让狂风暴雨来的 更猛烈些吧</p>
+                    <p class="j-flag" data-time="106.74000000000001">把酒倒满 来他个不醉不休</p>
+                    <p class="j-flag" data-time="114.00999999999999">我不想再问君有几多愁</p>
+                    <p class="j-flag" data-time="117.66">所有烦恼向东流</p>
+                    <p class="j-flag" data-time="121.31">把酒倒满 来他个不醉不休</p>
+                    <p class="j-flag" data-time="128.72">我不想再问君有几多愁</p>
+                    <p class="j-flag" data-time="132.42">幸福的人请举手 跟我走</p>
+                    <p class="j-flag" data-time="169.21">如果你有一双飞翔的翅膀 还等什么</p>
+                    <p class="j-flag" data-time="176.45">如果你的泪水已经汇聚成河 你在酿酒吗</p>
+                    <p class="j-flag" data-time="183.84">如果历尽磨难受尽挫折</p>
+                    <p class="j-flag" data-time="187.35">老天还依然不放过我</p>
+                    <p class="j-flag" data-time="191.17">那么就让狂风暴雨来的 更猛烈些吧</p>
+                    <p class="j-flag" data-time="198.69">如果历尽磨难受尽挫折</p>
+                    <p class="j-flag" data-time="202.16">老天还依然不放过我</p>
+                    <p class="j-flag" data-time="206.03">那么就让狂风暴雨来的 更猛烈些吧</p>
+                    <p class="j-flag" data-time="213.73">把酒倒满 来他个不醉不休</p>
+                    <p class="j-flag" data-time="221.06">我不想再问君有几多愁</p>
+                    <p class="j-flag" data-time="224.7">所有烦恼向东流</p>
+                    <p class="j-flag" data-time="228.14">把酒倒满 来他个不醉不休</p>
+                    <p class="j-flag" data-time="235.77">我不想再问君有几多愁</p>
+                    <p class="j-flag" data-time="239.4">幸福的人请举手 跟我走</p>
+                    <p class="j-flag" data-time="248.95">幸福的人请举手 跟我走</p></div>
+                <div class="bline bline-1 j-flag" id="auto-id-ZoSdfImhLfWgZuFX">
+                    <span class="scrol scrol-1 j-flag" hidefocus="true" id="auto-id-RUfgtcgkhmwk6Kkv" style="height: 49.4271px; display: block; top: 0px;"></span>
+                </div>
+            </div>
+        </div>
+        <div id="music_src"></div>
+    </div>
+</div>
+</body>
+</html>
